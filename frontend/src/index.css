@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* 1. Define our Custom Esports Theme Variables */
+@theme {
+  --color-background: #0a0a0c;
+  --color-surface: #18181b;
+  --color-primary: #3b82f6;
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+  
+  --font-mono: "Fira Code", monospace;
+  --font-sans: Inter, sans-serif;
+}
+
+/* 2. Apply Global Base Styles */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: #f3f4f6; /* Tailwind gray-100 */
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
